@@ -1,21 +1,13 @@
-var express = require('express');
-var cors = require('cors')
-var route = require('./route');
-
-
-var app = express();
+let express = require('express')
+let app = express()
+let cors = require('cors')
+let router = require('./routes/router')
 app.use(cors())
-app.use(route);
-
-
-
-
+app.use(router)
 app.get('/', (req, res) => {
-    res.send('Got Data')
+    res.send('<h1>SOAL 3 </h1>')
 })
 
-
-
-app.listen(3333, () => {
-    console.log('Server aktif di port 3333 ')
-});
+app.listen(1234, () => {
+    console.log('server running')
+})

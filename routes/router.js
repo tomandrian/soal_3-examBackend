@@ -4,8 +4,8 @@ let bodyParser = require('body-parser')
 let cors = require('cors')
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'admin',
-    password: '01041992',
+    user: 'root',
+    password: 'Perwira58',
     database: 'sekolahku'
 })
 db.connect(() => {
